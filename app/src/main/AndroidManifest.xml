@@ -19,6 +19,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".StatsActivity" />
+        <activity android:name=".BioActivity" />
+        <activity android:name=".SpellsActivity" />
+        <activity android:name=".InventoryActivity" />
+        <activity android:name=".LoadCharActivity"></activity>
     </application>
 
 </manifest>
