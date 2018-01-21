@@ -1,9 +1,20 @@
 <resources>
-    <string name="app_name">Dungeons_And_Dragons_Companion</string>
+    <string name="app_name">D&amp;D Companion</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
     <string name="nav_header_label"><![CDATA[Dungeons & Dragons Companion App]]></string>
+    <string name="nav_menu_home_label">Home</string>
+    <string name="nav_menu_stats_label">Stats</string>
+    <string name="nav_menu_bio_label">Biography</string>
+    <string name="nav_menu_spells_label">Spells</string>
+    <string name="nav_menu_inventory_label">Inventory</string>
+    <string name="nav_menu_races_label">Races</string>
+    <string name="nav_menu_classes_label">Classes</string>
+    <string name="nav_menu_background_label">Backgrounds</string>
+    <string name="nav_menu_spell_label">Spells</string>
+    <string name="nav_menu_gear_label">Gear</string>
+    <string name="nav_menu_languages_label">Languages</string>
 </resources>

@@ -1,13 +1,13 @@
 package com.example.markphilips.dungeons_and_dragons_companion.model;
 
 /**
- * Created by Mark on 12/17/2017.
- */
-
-/**
  * The Character Class. Defines a Character object that has a name, race,
  * alignment, background, hit dice, armour rating, health, level, speed,
  * initiative, and xp
+ *
+ * @author Mark Philips
+ * @since 1/15/2018
+ * @version 1
  */
 public class Character {
     //region Private Field Variables
@@ -28,26 +28,29 @@ public class Character {
     private int level;
     private int speed;
     private int initiative;
+
+    private long dbID;
     //endregion
 
-
+    //region Constructor Methods
     /**
-     * Constructor method fot the Character class. Responsible for defining a new Character object
-     * @param name The character's name
-     * @param race The character's race
-     * @param pClass The character's class
-     * @param bg The character's backgound
-     * @param alignment The character's alignment
-     * @param hitDice The character's hit dice
-     * @param ar The character's armour rating
-     * @param cHealth The character's current health
-     * @param mHealth The character's max health
-     * @param speed The character's movement speed
-     * @param initiative The character's turn initiative
-     * @param level The character's level
-     * @param xp The character's XP
+     * Private constructor method that defines a Character object without an ID in CharacterDB
+     *
+     * @param name The name of the character
+     * @param race The race of the character
+     * @param pClass The class of the character
+     * @param bg The background of the character
+     * @param alignment The alignment of the character
+     * @param hitDice The Hit Die(ce) of the character
+     * @param ar The Armour Rating of the character
+     * @param currHealth The current health of the character
+     * @param maxHealth The max health of the character
+     * @param speed The movement distance of the character (in ft.)
+     * @param initiative The initiative of the character
+     * @param level The level of the character
+     * @param xp The xp amount of the character
      */
-    public Character(String name, String race, String pClass, String bg, String alignment,
+    private Character(String name, String race, String pClass, String bg, String alignment,
                      String hitDice, float ar, float currHealth, float maxHealth, int speed,
                      int initiative, int level, int xp){
         this.name = name;
@@ -68,7 +71,33 @@ public class Character {
     }
 
 
+    /**
+     * Constructor method fot the Character class. Responsible for defining a new Character object
+     * @param name The character's name
+     * @param race The character's race
+     * @param pClass The character's class
+     * @param bg The character's backgound
+     * @param alignment The character's alignment
+     * @param hitDice The character's hit dice
+     * @param ar The character's armour rating
+     * @param currHealth The character's current health
+     * @param maxHealth The character's max health
+     * @param speed The character's movement speed
+     * @param initiative The character's turn initiative
+     * @param level The character's level
+     * @param xp The character's XP
+     */
+    public Character(long dbID, String name, String race, String pClass, String bg, String alignment,
+                     String hitDice, float ar, float currHealth, float maxHealth, int speed,
+                     int initiative, int level, int xp){
+        this(name, race, pClass, bg, alignment, hitDice, ar, currHealth,
+                maxHealth, speed, initiative, level, xp);
+        this.dbID = dbID;
+    }
+    //endregion
+
     //region Setter Methods
+    public void setDbID(long dbID){ this.dbID = dbID; }
     public void setName(String name){ this.name = name; }
     public void setRace(String race){ this.race = race; }
     public void setPClass(String pClass){ this.pClass = pClass; }
@@ -84,8 +113,8 @@ public class Character {
     public void setXp(int xp){ this.xp = xp; }
     //endregion
 
-
     //region Getter Methods
+    public long getDbID(){ return this.dbID; }
     public String getName(){ return this.name; }
     public String getRace(){ return this.race; }
     public String getpClass(){ return this.pClass; }
@@ -102,4 +131,8 @@ public class Character {
 
     //TODO: Figure out if getcharacters getter method is necessary
     //endregion
+
+
+    @Override
+    public String toString() { return super.toString(); }
 }

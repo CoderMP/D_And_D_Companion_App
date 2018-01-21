@@ -5,4 +5,5 @@ package com.example.markphilips.dungeons_and_dragons_companion.sqliteDB;
  */
 
 public class WeaponDB {
+
 }
