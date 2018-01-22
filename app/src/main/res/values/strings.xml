@@ -5,6 +5,8 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <!-- Navigation Menu Strings-->
     <string name="nav_header_label"><![CDATA[Dungeons & Dragons Companion App]]></string>
     <string name="nav_menu_home_label">Home</string>
     <string name="nav_menu_stats_label">Stats</string>
@@ -17,4 +19,102 @@
     <string name="nav_menu_spell_label">Spells</string>
     <string name="nav_menu_gear_label">Gear</string>
     <string name="nav_menu_languages_label">Languages</string>
+
+    <!-- MainActivity Strings -->
+    <string name="edt_char_name_hint">Character Name</string>
+    <string name="edt_armour_rating_hint">AR</string>
+    <string name="edt_xp_hint">XP</string>
+    <string name="edt_curr_health_hint">Curr. HP</string>
+    <string name="edt_max_health_hint">Max HP</string>
+    <string name="edt_initiative_hint">Initiative</string>
+    <string name="edt_hit_dice_hint">Hit Dice</string>
+
+    <!-- MainActivity String-Arrays -->
+    <string-array name="char_races">
+        <item>Aarakocra</item>
+        <item>Aasimar</item>
+        <item>Bugbear</item>
+        <item>Dragonborn</item>
+        <item>Dwarf</item>
+        <item>Elf</item>
+        <item>Feral Tiefling</item>
+        <item>Firbolg</item>
+        <item>Genasi</item>
+        <item>Gnome</item>
+        <item>Goblin</item>
+        <item>Goliath</item>
+        <item>Half-Elf</item>
+        <item>Halfling</item>
+        <item>Hal-Orc</item>
+        <item>Hobgoblin</item>
+        <item>Human</item>
+        <item>Kenku</item>
+        <item>Kobold</item>
+        <item>Lizardfolk</item>
+        <item>Orc</item>
+        <item>Tabaxi</item>
+        <item>Tiefling</item>
+        <item>Tortle</item>
+        <item>Triton</item>
+        <item>Yuan-Ti Pureblood</item>
+    </string-array>
+    <string-array name="char_classes">
+        <item>Barbarian</item>
+        <item>Bard</item>
+        <item>Blood Hunter</item>
+        <item>Cleric</item>
+        <item>Druid</item>
+        <item>Fighter</item>
+        <item>Monk</item>
+        <item>Paladin</item>
+        <item>Ranger</item>
+        <item>Rogue</item>
+        <item>Sorcerer</item>
+        <item>Warlock</item>
+        <item>Wizard</item>
+    </string-array>
+    <string-array name="char_alignment">
+        <item>Lawful Good</item>
+        <item>Neutral Good</item>
+        <item>Chaotic Good</item>
+        <item>Lawful Neutral</item>
+        <item>Neutral</item>
+        <item>Chaotic Neutral</item>
+        <item>Lawful Evil</item>
+        <item>Neutral Evil</item>
+        <item>Chaotic Evil</item>
+    </string-array>
+    <string-array name="char_background">
+        <item>Acolyte</item>
+        <item>Anthropologist</item>
+        <item>Archaeologist</item>
+        <item>Charlatan</item>
+        <item>City Watch/Investigator</item>
+        <item>Clan Crafter</item>
+        <item>Cloistered Scholar</item>
+        <item>Courtier</item>
+        <item>Criminal/Spy</item>
+        <item>Entertainer</item>
+        <item>Faction Agent</item>
+        <item>Far Traveler</item>
+        <item>Folk Hero</item>
+        <item>Gladiator</item>
+        <item>Guild Artisan/Merchant</item>
+        <item>Haunted One</item>
+        <item>Hermit</item>
+        <item>Inheritor</item>
+        <item>Knight</item>
+        <item>Knight of the Order</item>
+        <item>Mercenary Veteran</item>
+        <item>Noble</item>
+        <item>Outlander</item>
+        <item>Pirate</item>
+        <item>Sage</item>
+        <item>Sailor</item>
+        <item>Soldier</item>
+        <item>Urban Bounty Hunter</item>
+        <item>Urchin</item>
+        <item>Uthgardt Tribe Member</item>
+        <item>Waterdhavian Noble</item>
+    </string-array>
 </resources>
