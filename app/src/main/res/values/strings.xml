@@ -28,6 +28,7 @@
     <string name="edt_max_health_hint">Max HP</string>
     <string name="edt_initiative_hint">Initiative</string>
     <string name="edt_hit_dice_hint">Hit Dice</string>
+    <string name="edt_speed_hint">Speed</string>
     <string name="btn_success_decrease_label"><![CDATA[<]]></string>
     <string name="txt_ds_success_total">DS Success:\n0</string>
     <string name="btn_success_increase_label"><![CDATA[>]]></string>

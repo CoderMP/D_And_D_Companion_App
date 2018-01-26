@@ -12,9 +12,34 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+    //region Private Field Variables
+    private EditText edtCharName;
+    private EditText edtArmourRating;
+    private EditText edtCurrHealth;
+    private EditText edtMaxHealth;
+    private EditText edtExperience;
+    private EditText edtInitiative;
+    private EditText edtSpeed;
+    private EditText edtHitDice;
+
+    private Spinner spnCharBackground;
+    private Spinner spnCharClass;
+    private Spinner spnCharRace;
+    private Spinner spnCharAlignment;
+
+    private Button btnDsSuccessIncrement;
+    private Button btnDsSuccessDecrement;
+    private TextView txtDeathSaveSuccessTotal;
+    private Button btnDsFailureIncrement;
+    private Button btnDsFailureDecrement;
+    private TextView txtDeathSaveFailureTotal;
+    //endregion
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +65,62 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+    }
+
+    private void setupViews(){
+        edtCharName = findViewById(R.id.edt_char_name);
+        edtArmourRating = findViewById(R.id.edt_armour_rating);
+        edtCurrHealth = findViewById(R.id.edt_curr_health);
+        edtMaxHealth = findViewById(R.id.edt_max_health);
+        edtExperience = findViewById(R.id.edt_xp);
+        edtInitiative = findViewById(R.id.edt_initiative);
+        edtSpeed = findViewById(R.id.edt_speed);
+        edtHitDice = findViewById(R.id.edt_hit_dice);
+
+        spnCharAlignment = findViewById(R.id.spn_alignment);
+        spnCharBackground = findViewById(R.id.spn_background);
+        spnCharRace = findViewById(R.id.spn_race);
+        spnCharClass = findViewById(R.id.spn_class);
+
+        btnDsSuccessIncrement = findViewById(R.id.btn_success_increase);
+        btnDsSuccessDecrement = findViewById(R.id.btn_success_decrease);
+        btnDsFailureIncrement = findViewById(R.id.btn_failure_increase);
+        btnDsFailureDecrement = findViewById(R.id.btn_failure_decrease);
+
+        txtDeathSaveSuccessTotal = findViewById(R.id.txt_death_save_success_total);
+        txtDeathSaveFailureTotal = findViewById(R.id.txt_death_save_failure_total);
+
+        btnDsSuccessIncrement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                successIncrementDecrement(v);
+            }
+        });
+        btnDsSuccessDecrement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                successIncrementDecrement(v);
+            }
+        });
+    }
+
+
+    /**
+     * Private method that is responsible for incrementing or decrementing the Death Save Success
+     * total.
+     *
+     * @param view The increment/decrement button that was tapped
+     */
+    private void successIncrementDecrement(View view){
+        //Retrieve the ID of the View that was passed to the method
+        int viewID = view.getId();
+
+        if (viewID == btnDsSuccessIncrement.getId()){
+            //TODO: Implement code to increment & update total
+        }
+        else if (viewID == btnDsSuccessDecrement.getId()){
+            //TODO: Implement code to decrement & update total
+        }
     }
 
     @Override
