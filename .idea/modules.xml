@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Dungeons_And_Dragons_Companion.iml" filepath="$PROJECT_DIR$/Dungeons_And_Dragons_Companion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/D_And_D_Companion_App.iml" filepath="$PROJECT_DIR$/D_And_D_Companion_App.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -6,7 +6,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_load_characters"
-            android:icon="@drawable/ic_contacts_black_24dp"
+            android:icon="@drawable/ic_menu_loadouts"
             android:title="Load Character"/>
     </group>
 
@@ -15,23 +15,23 @@
             <group android:checkableBehavior="single">
                 <item
                     android:id="@+id/nav_home"
-                    android:icon="@drawable/ic_home_black_24dp"
+                    android:icon="@drawable/ic_menu_character"
                     android:title="@string/nav_menu_home_label" />
                 <item
                     android:id="@+id/nav_stats"
-                    android:icon="@drawable/ic_list_black_24dp"
+                    android:icon="@drawable/ic_menu_stats"
                     android:title="@string/nav_menu_stats_label" />
                 <item
                     android:id="@+id/nav_bio"
-                    android:icon="@drawable/ic_import_contacts_black_24dp"
+                    android:icon="@drawable/ic_menu_bio"
                     android:title="@string/nav_menu_bio_label"/>
                 <item
                     android:id="@+id/nav_spells"
-                    android:icon="@drawable/ic_book_black_24dp"
+                    android:icon="@drawable/ic_menu_spells"
                     android:title="@string/nav_menu_spells_label" />
                 <item
                     android:id="@+id/nav_inventory"
-                    android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+                    android:icon="@drawable/ic_menu_inventory"
                     android:title="@string/nav_menu_inventory_label" />
             </group>
         </menu>
@@ -42,27 +42,27 @@
             <group android:checkableBehavior="single">
                 <item
                     android:id="@+id/nav_info_races"
-                    android:icon="@drawable/ic_menu_share"
+                    android:icon="@drawable/ic_menu_char_races"
                     android:title="@string/nav_menu_races_label" />
                 <item
                     android:id="@+id/nav_info_classes"
-                    android:icon="@drawable/ic_menu_share"
+                    android:icon="@drawable/ic_menu_char_classes"
                     android:title="@string/nav_menu_classes_label" />
                 <item
                     android:id="@+id/nav_info_backgrounds"
-                    android:icon="@drawable/ic_menu_share"
+                    android:icon="@drawable/ic_menu_char_backgrounds"
                     android:title="@string/nav_menu_background_label" />
                 <item
                     android:id="@+id/nav_info_spells"
-                    android:icon="@drawable/ic_menu_share"
+                    android:icon="@drawable/ic_menu_char_spells"
                     android:title="@string/nav_menu_spell_label" />
                 <item
                     android:id="@+id/nav_info_gear"
-                    android:icon="@drawable/ic_menu_share"
+                    android:icon="@drawable/ic_menu_gear"
                     android:title="@string/nav_menu_gear_label" />
                 <item
                     android:id="@+id/nav_info_languages"
-                    android:icon="@drawable/ic_menu_share"
+                    android:icon="@drawable/ic_menu_languages"
                     android:title="@string/nav_menu_languages_label" />
             </group>
         </menu>
